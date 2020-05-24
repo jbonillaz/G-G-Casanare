@@ -5,10 +5,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
  
   <ion-content>
-    <ion-button (click)="toggleInfiniteScroll()" expand="block" >
+    <ion-searchbar></ion-searchbar>
+    <ion-button  expand="block"  routerLink="/login">
       Outsourcing
     </ion-button>
     <ion-button (click)="toggleInfiniteScroll()" expand="block">
@@ -35,7 +35,6 @@
     <ion-list>
       G&G "Adelante Casanare"
     </ion-list>
-    
     <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
       <ion-infinite-scroll-content
         loadingSpinner="bubbles"
@@ -43,7 +42,6 @@
       </ion-infinite-scroll-content>
     </ion-infinite-scroll>
   </ion-content>
-
   <!--Espacio para el pie de pagina-->
 <ion-footer>
   <ion-toolbar color="primary">

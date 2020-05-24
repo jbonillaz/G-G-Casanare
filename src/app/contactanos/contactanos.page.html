@@ -5,7 +5,42 @@
 </ion-header>
 
 <ion-content>
-  
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Nombre <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Apellidos <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Titulo</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Direccion</ion-label>
+        <ion-input placeholder="Direccion1"></ion-input>
+        <ion-input placeholder="Direccion2"></ion-input>
+        <ion-input placeholder="Ciudad"></ion-input>
+        <ion-input placeholder="Departamento"></ion-input>
+        <ion-input placeholder="Codigo postal"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Comentario</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Enviar</ion-button>
+    </div>
+  </form>
 </ion-content>
 
 
