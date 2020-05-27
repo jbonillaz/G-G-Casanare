@@ -1,7 +1,8 @@
 {
   "name": "GYG",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
